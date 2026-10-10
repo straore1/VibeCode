@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing plans</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <h1>Choose your plan</h1>
+      <p>Pick the option that fits your work. You can change later.</p>
+    </header>
+
+    <section class="pricing-grid" aria-label="Pricing plans">
+      <article class="pricing-card" data-plan="basic">
+        <header class="pricing-card__header">
+          <h2 class="pricing-card__title">Basic Plan</h2>
+          <p class="pricing-card__price">
+            <span class="pricing-card__amount">$9.99</span>
+            <span class="pricing-card__period">/ month</span>
+          </p>
+        </header>
+
+        <ul class="pricing-card__features">
+          <li>1 GB Storage</li>
+          <li>Basic Support</li>
+          <li>All Core Features</li>
+        </ul>
+
+        <button class="pricing-card__btn" type="button" data-plan="Basic Plan">
+          Start Trial
+        </button>
+      </article>
+
+      <article class="pricing-card pricing-card--featured" data-plan="pro">
+        <p class="pricing-card__badge">Most popular</p>
+        <header class="pricing-card__header">
+          <h2 class="pricing-card__title">Pro Plan</h2>
+          <p class="pricing-card__price">
+            <span class="pricing-card__amount">$19.99</span>
+            <span class="pricing-card__period">/ month</span>
+          </p>
+        </header>
+
+        <ul class="pricing-card__features">
+          <li>50 GB Storage</li>
+          <li>Priority Support</li>
+          <li>All Core Features</li>
+          <li>Team collaboration</li>
+        </ul>
+
+        <button class="pricing-card__btn" type="button" data-plan="Pro Plan">
+          Start Trial
+        </button>
+      </article>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
